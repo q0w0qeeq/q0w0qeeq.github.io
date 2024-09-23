@@ -441,8 +441,8 @@
 
   function load_artalk() {
     if (!el) return;
-    utils.css('https://cdnjs.cloudflare.com/ajax/libs/artalk/2.9.1/Artalk.css');
-    utils.js('https://cdnjs.cloudflare.com/ajax/libs/artalk/2.9.1/Artalk.js', {defer: true}).then(function () {
+    utils.css('https://cdn.jsdelivr.net/npm/artalk@2.9.1/dist/Artalk.css');
+    utils.js('https://cdn.jsdelivr.net/npm/artalk@2.9.1/dist/Artalk.js', {defer: true}).then(function () {
       const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
       const artalk = Artalk.init({
         el: '#artalk_container',
